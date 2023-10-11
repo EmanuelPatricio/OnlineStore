@@ -1,0 +1,10 @@
+﻿@using WebUI.Helpers
+@code {
+    [Inject]
+    public required NavigationManager NavigationManager { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        NavigationManager.NavigateTo(PagesRoutes.DefaultNavigation.Login);
+    }
+}

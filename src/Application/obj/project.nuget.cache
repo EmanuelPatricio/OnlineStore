@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "J3Sfv5DsgBwYBsWA7WPA2N6k0CA9+DfZypT6l3eiSymqyeNIpToqNV/4ZNXQp4Ha/LG51FwDVlDwhOk2ty8NmQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\epatr\\source\\repos\\OnlineStore\\src\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,37 @@
+﻿@using WebUI.Helpers
+@using Application.Models.Requests
+@attribute [Route(PagesRoutes.DefaultNavigation.Home)]
+
+@attribute [AllowAnonymous]
+@inject NavigationManager NavigationManager
+
+<!--Main layout-->
+<div class="container">
+    <section>
+        <div class="row gx-lg-5">
+            <Virtualize Items="@Tools.Data" Context="tool">
+                <Card Margin="Margin.Is2.FromTop">
+                    <CardImage Source="@(tool.Image.Contains("http") ? tool.Image : $"img/{tool.Image}")"
+                               Alt="Placeholder image"
+                               style="max-width: 600px; margin: auto;"/>
+                    <CardBody>
+                        <CardTitle Size="5">
+                            @tool.Name
+                        </CardTitle>
+                        <CardText>
+                            @tool.Description
+                        </CardText>
+                        <Button Color="Color.Primary" Margin="Margin.Is2.FromTop" Type="ButtonType.Link" To="@($"./tool/{tool.Id}")">
+                            Read more <Icon Name="IconName.ArrowRight" />
+                        </Button>
+                        <Button Color="Color.Primary" Margin="Margin.Is2.FromTop" Clicked="() => AddToolToCart(tool)">
+                            Add <Icon Name="IconName.Add" />
+                        </Button>
+                    </CardBody>
+                </Card>
+            </Virtualize>
+        </div>
+    </section>
+    <!--Section: Content-->
+</div>
+<!--Main layout-->

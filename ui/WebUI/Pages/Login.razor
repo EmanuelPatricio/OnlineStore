@@ -1,0 +1,131 @@
+﻿@using WebUI.Helpers
+@attribute [Route(PagesRoutes.DefaultNavigation.Login)]
+
+<PageTitle>Login</PageTitle>
+
+<Tabs SelectedTab="@_selectedTab" SelectedTabChanged="@OnSelectedTabChanged" Pills FullWidth>
+    <Items>
+        <Tab Name="login">Login</Tab>
+        <Tab Name="register">Register</Tab>
+    </Items>
+    <Content>
+        <TabPanel Name="login">
+            <Card>
+                <CardBody>
+                    <CardTitle>
+                        Welcome Back, Please Login
+                    </CardTitle>
+                </CardBody>
+                <CardBody>
+                    <Validations @ref="@LoginValidationsRef" Model="Session" Mode="ValidationMode.Manual" ValidateOnLoad="false">
+                        <Validation>
+                            <Field Horizontal>
+                                <FieldLabel ColumnSize="ColumnSize.Is2" For="email">Email</FieldLabel>
+                                <FieldBody ColumnSize="ColumnSize.Is10">
+                                    <TextEdit id="email" Role="TextRole.Email" @bind-Text="@Session.Email">
+                                        <Feedback>
+                                            <ValidationError />
+                                        </Feedback>
+                                    </TextEdit>
+                                </FieldBody>
+                            </Field>
+                        </Validation>
+                        <Validation>
+                            <Field Horizontal>
+                                <FieldLabel ColumnSize="ColumnSize.Is2" For="password">Password</FieldLabel>
+                                <FieldBody ColumnSize="ColumnSize.Is10">
+                                    <TextEdit id="password" Role="TextRole.Password" @bind-Text="@Session.Password">
+                                        <Feedback>
+                                            <ValidationError />
+                                        </Feedback>
+                                    </TextEdit>
+                                </FieldBody>
+                            </Field>
+                        </Validation>
+                    </Validations>
+                </CardBody>
+                <CardBody>
+                    <Button Color="Color.Primary" Clicked="@OnLoginClicked">Login</Button>
+                </CardBody>
+            </Card>
+        </TabPanel>
+        <TabPanel Name="register">
+            <Card>
+                <CardBody>
+                    <CardTitle>
+                        New Here? Create An Account
+                    </CardTitle>
+                </CardBody>
+                <CardBody>
+                    <Validations @ref="RegisterValidationsRef" Model="_createUserReq" Mode="ValidationMode.Manual" ValidateOnLoad="false">
+                        <Validation>
+                            <Field Horizontal>
+                                <FieldLabel ColumnSize="ColumnSize.Is2" For="name">First name</FieldLabel>
+                                <FieldBody ColumnSize="ColumnSize.Is10">
+                                    <TextEdit id="name" Role="TextRole.Text" @bind-Text="@_createUserReq.FirstName">
+                                        <Feedback>
+                                            <ValidationError />
+                                        </Feedback>
+                                    </TextEdit>
+                                </FieldBody>
+                            </Field>
+                        </Validation>
+                        <Validation>
+                            <Field Horizontal>
+                                <FieldLabel ColumnSize="ColumnSize.Is2" For="lastName">Last name</FieldLabel>
+                                <FieldBody ColumnSize="ColumnSize.Is10">
+                                    <TextEdit id="lastName" Role="TextRole.Text" @bind-Text="@_createUserReq.LastName">
+                                        <Feedback>
+                                            <ValidationError />
+                                        </Feedback>
+                                    </TextEdit>
+                                </FieldBody>
+                            </Field>
+                        </Validation>
+                        <Validation>
+                            <Field Horizontal>
+                                <FieldLabel ColumnSize="ColumnSize.Is2" For="emailR">Email</FieldLabel>
+                                <FieldBody ColumnSize="ColumnSize.Is10">
+                                    <TextEdit id="emailR" Role="TextRole.Email" @bind-Text="@_createUserReq.Email">
+                                        <Feedback>
+                                            <ValidationError />
+                                        </Feedback>
+                                    </TextEdit>
+                                </FieldBody>
+                            </Field>
+                        </Validation>
+                        <Validation>
+                            <Field Horizontal>
+                                <FieldLabel ColumnSize="ColumnSize.Is2" For="passwordR">Password</FieldLabel>
+                                <FieldBody ColumnSize="ColumnSize.Is10">
+                                    <TextEdit id="passwordR" Role="TextRole.Password" @bind-Text="@_createUserReq.Password">
+                                        <Feedback>
+                                            <ValidationError />
+                                        </Feedback>
+                                    </TextEdit>
+                                </FieldBody>
+                            </Field>
+                        </Validation>
+                        <Validation>
+                            <Field Horizontal>
+                                <FieldLabel ColumnSize="ColumnSize.Is2" For="confirmPassword">Confirm password</FieldLabel>
+                                <FieldBody ColumnSize="ColumnSize.Is10">
+                                    <TextEdit id="confirmPassword" Role="TextRole.Password" @bind-Text="@_createUserReq.ConfirmPassword">
+                                        <Feedback>
+                                            <ValidationError />
+                                        </Feedback>
+                                    </TextEdit>
+                                </FieldBody>
+                            </Field>
+                        </Validation>
+                    </Validations>
+                </CardBody>
+                <CardBody>
+                    <Button Color="Color.Primary" Clicked="@OnRegisterClicked">
+                        Create User
+                    </Button>
+                </CardBody>
+            </Card>
+        </TabPanel>
+    </Content>
+</Tabs>

@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "CeLCCLHKujD3afUCys+l8SFccSbB7mAjEF67l8gSrl0c+XPDF8eEoluKkF7bdUONfngeepCkhyN2fmP59ULQMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\epatr\\source\\repos\\OnlineStore\\ui\\WebUI\\WebUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\epatr\\.nuget\\packages\\blazorise\\1.2.4\\blazorise.1.2.4.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\blazorise.bootstrap\\1.2.4\\blazorise.bootstrap.1.2.4.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\blazorise.icons.fontawesome\\1.2.4\\blazorise.icons.fontawesome.1.2.4.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\blazorise.licensing\\1.1.0\\blazorise.licensing.1.1.0.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.7\\microsoft.aspnetcore.authorization.7.0.7.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.7\\microsoft.aspnetcore.components.7.0.7.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.7\\microsoft.aspnetcore.components.analyzers.7.0.7.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.7\\microsoft.aspnetcore.components.forms.7.0.7.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.7\\microsoft.aspnetcore.components.web.7.0.7.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.7\\microsoft.aspnetcore.metadata.7.0.7.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\microsoft.jsinterop\\7.0.7\\microsoft.jsinterop.7.0.7.nupkg.sha512",
+    "C:\\Users\\epatr\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
